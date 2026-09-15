@@ -13,6 +13,6 @@ printf(" \n		Value pi=%f	\n %d - is 2^10 ", PI, num);
 	
 getch();
 
-
+return 0;
 
 }

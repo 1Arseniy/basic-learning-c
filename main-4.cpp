@@ -7,34 +7,28 @@ int main(int argc, char** argv) {
 	
 	setlocale(LC_ALL, "Rus");
 	
-	puts("Ïðîãðàììà âû÷èñëÿåò 3 ñòîðîíó c è ïëîùàäü òðåóãîëüíèêà");
-	puts("ïî çàäàííûì äëèíàì a,b è óãëó C");
+	puts("Программа вычисляет 3 сторону c и площадь треугольника");
+	puts("по заданным длинам a,b и углу C");
+	puts("Выполнил Крутой A.И группа КФ-17 вариант 6");
 	
 	
 	
 	int angle = 180;
-	float a,b,c,C; 
+	float a,b,c,C,radian,p,area; 
 	
-	printf("\n Ââåäèòå ñòîðîíû òðåóãîëüíèêà è óãîë â ãðàäóñàõ:");
+	printf("\n Введите стороны треугольника и угол в градусах: ");
 	scanf("%f %f %f", &a,&b,&C);
 	
-//	if(a + b <= c || a + c <= b || b + c <= a || Ñ >= 180) {
-//		printf("\n Òàêîãî òðåóãîëüíèêà íå ñóùåñòâóåò");
-//		
-//		return 1;
-//	}
-//	
-	
-	float radian = C * M_PI/angle;
+    radian = C * M_PI/angle;
 	c = sqrt(pow(a,2) + pow(b,2) - 2 * a * b * cos(radian));
 	
 	
-	float p = (a + b + c) / 2;
-	float area = p * (p - c) * tan(radian / 2); 
+    p = (a + b + c) / 2;
+	area = p * (p - c) * tan(radian / 2); 
 	
 	
-    printf("\ Ñòîðîíà òðåóãîëüíèêà=%f", c);
-    printf("\ Ïëîùàäü òðåóãîëüíèêà=%f", area);
+    printf("\n Сторона треугольника=%f", c);
+    printf("\n Площадь треугольника=%f", area);
     
     
 	return 0;
