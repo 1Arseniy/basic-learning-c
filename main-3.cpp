@@ -10,8 +10,8 @@ int main() {
     double a,b,h,x,y,xMax,xMin,yMax,yMin;
 
 
-    printf("\nВведите начало отрезка a: ");
-    printf("\nВведите конец отрезка b: "); 
+    printf("\nВведите начало отрезка a, ");
+    printf("\nВведите конец отрезка b, "); 
     printf("\nВведите количество шагов N: ");
 
     scanf("%lf %lf %d", &a, &b, &N);
@@ -51,7 +51,7 @@ int main() {
     printf("\nМаксимальное значение Y = %lf", yMax);
 
    printf("\nМинимальное значение x = %lf", xMin);
-   printf("\nМаксимальное значение x = %lf", xMax);
+   printf("\nМаксимальное значение x = %lf\n", xMax);
     
     
     
