@@ -6,12 +6,9 @@ int main() {
 
      
     int arr[] = {9, 2, -6, 5, 0, -3, -7, -1, -4, -8, -2, -5};
-    int arrLength = sizeof(arr) / sizeof(arr[0]);
-    
+    int arrLength = sizeof(arr) / sizeof(arr[0]); 
     int max, sum = 0;
-
     
-     
     max = arr[0];
     for(int i = 1; i < arrLength; i++) {
        if(arr[i] > max) {
