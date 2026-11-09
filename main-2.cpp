@@ -48,6 +48,8 @@ int main() {
         printf(" %d", intmas[i]);
      } 
 
+     printf("\n");
+
      return 0;
 
 }
